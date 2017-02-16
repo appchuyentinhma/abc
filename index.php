@@ -30,6 +30,7 @@ echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 if (isset($_SESSION['facebook_access_token'])){
 	echo $_SESSION['facebook_access_token'];
 }
+?>
 =======
 <?php
 //////////////////////////////////////////////
