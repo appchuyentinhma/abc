@@ -19,6 +19,8 @@ $fb = new Facebook([
     'default_graph_version' => 'v2.5',
 ]);
 //$appsecret_proof= hash_hmac('sha256', $access_token, $app_secret);
+	   var_dum($fb);
+	   die;
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email', 'user_likes','publish_actions','user_photos','user_relationships','user_birthday']; // optional
 $loginUrl = $helper->getLoginUrl('https://YOUR_URL/callback.php', $permissions);//Change YOUR_URL to your URL CALLBACK FILE
